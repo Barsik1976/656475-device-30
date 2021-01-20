@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Александра Мизикина](https://up.htmlacademy.ru/htmlcss/30/user/656475).
-* Наставник: [Анна Лисененкова](https://up.htmlacademy.ru/htmlcss/30/user/id85590).
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
