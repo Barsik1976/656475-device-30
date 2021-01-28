@@ -5,6 +5,9 @@
     <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Девайс</title>
     <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="preload" href="fonts/opensans.woff2" as="font">
     <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <link rel="preload" href="fonts/opensanslight.woff2" as="font">
@@ -16,7 +19,9 @@
   <body>
     <header class="page-header">
       <div class="container">
-        <a class="logo header-logo">Device</a>
+        <a class="logo header-logo">
+          <img src="img/logo-header.svg" width="163" height="35" alt="Логотип Девайс">
+        </a>
         <div class="header-wrap">
           <form class="form-search" action="http://echo.htmlacademy.ru" method="get">
             <input type="search" placeholder="Поиск:">
@@ -70,7 +75,7 @@
         <ul class="slider-list">
           <li class="slider-item">
             <div class="slider-image">
-              <img src="img/" alt="">
+              <img src="img/slider-main-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
             </div>
             <div class="slider-desc">
               <p class="slider-title title">Делай селфи, как Бен Стиллер!</p>
@@ -113,7 +118,7 @@
           <li class="categories-item">
             <a class="categories-link" href="">
               <div class="categories-img">
-                <img src="img/" alt="">
+                <img src="img/icon-virtual-reality.svg" width="97" height="55" alt="Виртуальные очки">
               </div>
               <p>Виртуальная реальность</p>
             </a>
@@ -121,7 +126,7 @@
           <li class="categories-item">
             <a class="categories-link" href="catalog.html">
               <div class="categories-img">
-                <img src="img/" alt="">
+                <img src="img/icon-selfie.svg" width="86" height="117" alt="Моноподы для селфи">
               </div>
               <p>Моноподы для селфи</p>
             </a>
@@ -129,7 +134,7 @@
           <li class="categories-item">
             <a class="categories-link" href="">
               <div class="categories-img">
-                <img src="img/" alt="">
+                <img src="img/icon-action-camera.svg" width="71" height="87" alt="Экшн-камеры">
               </div>
               <p>Экшн-камеры</p>
             </a>
@@ -137,7 +142,7 @@
           <li class="categories-item">
             <a class="categories-link" href="">
               <div class="categories-img">
-                <img src="img/" alt="">
+                <img src="img/icon-fitness.svg" width="107" height="65" alt="Фитнесс-браслеты">
               </div>
               <p>Фитнес-браслеты</p>
             </a>
@@ -145,7 +150,7 @@
           <li class="categories-item">
             <a class="categories-link" href="">
               <div class="categories-img">
-                <img src="img/" alt="">
+                <img src="img/icon-smart-watch.svg" width="56" height="98" alt="Умные часы">
               </div>
               <p>Умные часы</p>
             </a>
@@ -153,7 +158,7 @@
           <li class="categories-item">
             <a class="categories-link" href="">
               <div class="categories-img">
-                <img src="img/" alt="">
+                <img src="img/icon-quadrocopter.svg" width="132" height="69" alt="Квадрокоптеры">
               </div>
               <p>Квадрокоптеры</p>
             </a>
@@ -195,22 +200,22 @@
         <ul class="partners-list">
           <li class="partner-item">
             <a href="">
-              <img src="img/" alt="Dji">
+              <img src="img/logo-dji.png" width="260" height="100" alt="Логотип Dji">
             </a>
           </li>
           <li class="partner-item">
             <a href="">
-              <img src="img/" alt="SpGadgets">
+              <img src="img/logo-spgadgets.png" width="260" height="100" alt="Логотип SpGadgets">
             </a>
           </li>
           <li class="partner-item">
             <a href="">
-              <img src="img/" alt="GoPro">
+              <img src="img/logo-gopro.png" width="260" height="100" alt="Логотип GoPro">
             </a>
           </li>
           <li class="partner-item">
             <a href="">
-              <img src="img/" alt="Vive">
+              <img src="img/logo-vive.png" width="260" height="100" alt="Логотип Vive">
             </a>
           </li>
         </ul>
@@ -231,7 +236,7 @@
           <h2 class="title">Контакты</h2>
           <p class="text-site">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
           <a class="contacts-map" href="">
-            <img src="img/" alt="карта">
+            <img src="img/map-office.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
           </a>
           <a class="write-us more-link" href="">Напишите нам</a>0
         </section>
@@ -267,31 +272,22 @@
             <ul class="social-list">
               <li class="social-item">
                 <a class="social-link" href="#facebook" title="facebook">
-                  <span class="visually-hidden">Фейсбук</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 10.15 21.74">
-                    <path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z" fill="#fff"/>
-                  </svg>
+                  <img src="img/icon_facebook.svg" width="32" height="32" alt="Фейсбук">
                 </a>
               </li>
               <li class="social-item">
                 <a class="social-link" href="#instagram" title="instagram">
-                  <span class="visually-hidden">Инстаграм</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 20 20">
-                    <path d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4 3.4 0 0 0-.1 1 6 6 0 1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18 4.5a.47.47 0 0 1-.5.5h-2a.47.47 0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0 1 .5.5z" fill="#fff"></path>
-                  </svg>
+                  <img src="img/icon_instagram.svg" width="32" height="32" alt="Инстаграм">
                 </a>
               </li>
               <li class="social-item">
                 <a class="social-link" href="#twitter" title="twitter">
-                  <span class="visually-hidden">Твиттер</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 20 20">
-                    <path d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4 3.4 0 0 0-.1 1 6 6 0 1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18 4.5a.47.47 0 0 1-.5.5h-2a.47.47 0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0 1 .5.5z" fill="#fff"></path>
-                  </svg>
-                </a>
+                  <img src="img/icon_twitter.svg" width="32" height="32" alt="Твиттер">
+                 </a>
               </li>
             </ul>
             <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="img/" alt="">
+              <img src="img/logo-html.svg" width="27" height="34" alt="Логотип htmlacademy">
             </a>
           </div>
         </div>
