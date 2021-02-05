@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
   <meta name="format-detection" content="telephone=no">
@@ -14,10 +14,11 @@
 <body class="page-body">
   <header class="main-header">
     <div class="container">
+    <div class="header-wrap">
       <a class="header-logo">
         <img src="img/logo-header.svg" width="163" height="35" alt="Логотип Девайс">
       </a>
-      <div class="header-wrap">
+      <div class="user-wrap">
         <form class="form-search" action="http://echo.htmlacademy.ru" method="get">
           <input type="search" placeholder="Поиск:">
           <button type="submit" class="button search-button">Найти</button>
@@ -33,9 +34,10 @@
             <a class="cart-header" href="#">Корзина</a>
           </li>
         </ul>
+      </div>
         <nav class="header-navigation">
           <ul class="catalog">
-            <li class="catalog-item">
+            <li class="catalog-item catalog-products">
               <a href="#">Каталог товаров</a>
               <ul class="goods">
                 <li class="goods-item">
@@ -58,6 +60,8 @@
                 </li>
               </ul>
             </li>
+          </ul>
+          <ul class="header-services">
             <li class="catalog-item">
               <a href="#">Доставка</a>
             </li>
@@ -81,7 +85,7 @@
             <img src="img/slider-main-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
           </div>
           <div class="gallery-info">
-            <p class="gallery-title title">Делай селфи, как Бен Стиллер!</p>
+            <p class="gallery-title title">Делай селфи,<br> как Бен Стиллер!</p>
             <p class="gallery-text text-site">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <div class="gallery-link-wrap">
               <a class="more-btn" href="#">Подробнее</a>
@@ -104,13 +108,13 @@
         </li>
       </ul>
       <ul class="slider-controls">
-        <li class="toggle">
+        <li class="slider-toggle">
           <button type="button">Первый</button>
         </li>
-        <li class="toggle">
+        <li class="slider-toggle">
           <button type="button">Второй</button>
         </li>
-        <li class="toggle">
+        <li class="slider-toggle">
           <button type="button">Третий</button>
         </li>
       </ul>
@@ -131,7 +135,7 @@
             <div class="categories-img">
               <img src="img/icon-selfie.svg" width="86" height="117" alt="Моноподы для селфи">
             </div>
-            <p>Моноподы для селфи</p>
+            <p>Моноподы<br> для селфи</p>
           </a>
         </li>
         <li class="categories-item">
@@ -168,10 +172,10 @@
         </li>
       </ul>
     </section>
-    <section class="services">
+    <section class="services-wrap">
+      <div class="container services">
       <h2 class="visually-hidden">Услуги</h2>
-      <div class="container">
-        <ul class="services-list">
+        <ul class="services-nav">
           <li class="service-item">
             <button class="service-link-active more-btn" type="button">Доставка</button>
           </li>
@@ -227,7 +231,7 @@
         </li>
       </ul>
     </section>
-    <div class="about-wrap">
+    <div class="container about-wrap">
       <section class="about-us">
         <h2 class="title">О нас</h2>
         <p class="text-site">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -283,6 +287,7 @@
         <p class="footer-phone">Тел.:
           <a href="tel:+74954959595">+7 (495) 495-95-95</a>
         </p>
+      </div>
         <div class="footer-contacts">
           <ul class="social-list">
             <li class="social-item">
@@ -306,7 +311,6 @@
           </a>
         </div>
       </div>
-    </div>
   </footer>
   <section class="modal modal-show">
     <h2 class="visually-hidden">Напишите нам</h2>
