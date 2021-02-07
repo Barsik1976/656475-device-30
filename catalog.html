@@ -14,31 +14,33 @@
 <body class="page-body">
   <header class="main-header">
     <div class="container">
-      <a class="logo header-logo" href="index.html">
-        <img src="img/logo-header.svg" width="163" height="35" alt="Логотип Девайс">
-      </a>
       <div class="header-wrap">
-        <form class="form-search" action="http://echo.htmlacademy.ru" method="get">
-          <input type="search" placeholder="Поиск:">
-          <button type="submit" class="button search-button">Найти</button>
-        </form>
-        <ul class="user-header">
-          <li>
-            <a class="person" href="#">Валентин Петухов</a>
-          </li>
-          <li>
-            <a class="login-out" href="#">Выйти</a>
-          </li>
-          <li>
-            <a class="compare" href="#">Сравнить</a>
-          </li>
-          <li>
-            <a class="cart" href="#">Корзина</a>
-          </li>
-        </ul>
+        <a class="header-logo" href="index.html">
+          <img src="img/logo-header.svg" width="163" height="35" alt="Логотип Девайс">
+        </a>
+        <div class="user-wrap">
+          <form class="form-search" action="http://echo.htmlacademy.ru" method="get">
+            <input type="search" placeholder="Поиск:">
+            <button type="submit" class="button search-button">Найти</button>
+          </form>
+          <ul class="user-header-catalog">
+            <li>
+              <a class="person" href="#">Валентин Петухов</a>
+            </li>
+            <li>
+              <a class="login-out" href="#">Выйти</a>
+            </li>
+            <li>
+              <a class="compare-header" href="#">Сравнить</a>
+            </li>
+            <li>
+              <a class="cart-header" href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
         <nav class="header-navigation">
           <ul class="catalog">
-            <li class="catalog-item">
+            <li class="catalog-item catalog-products">
               <a href="#">Каталог товаров</a>
               <ul class="goods">
                 <li class="goods-item">
@@ -61,6 +63,8 @@
                 </li>
               </ul>
             </li>
+          </ul>
+          <ul class="header-services">
             <li class="catalog-item">
               <a href="#">Доставка</a>
             </li>
@@ -76,8 +80,9 @@
     </div>
   </header>
   <main class="page-main">
-    <div class="container">
       <section class="catalog-inner">
+      <div class="container">
+      <div class="catalog-inner-wrap">
         <h1 class="catalog-inner-title title">Моноподы для селфи</h1>
         <ul class="crumbs">
           <li class="crumb-item">
@@ -90,12 +95,12 @@
             Моноподы для селфи
           </li>
         </ul>
-      </section>
+      </div>
     </div>
     <div class="catalog-page">
-      <div class="catalog-filter">
-        <div class="container">
-          <h3 class="header-filter catalog-filter-title">Фильтр:</h3>
+      <div class="container">
+      <div class="header-filter">
+          <h3 class="catalog-filter-title">Фильтр:</h3>
           <div class="catalog-assort">
             <h3>Сортировка:</h3>
             <ul class="catalog-assort-list">
@@ -120,8 +125,8 @@
           </div>
         </div>
       </div>
-      <div class="content-catalog">
         <div class="container">
+      <div class="content-catalog">
           <section class="filter">
             <h2 class="visually-hidden">Фильтр товаров</h2>
             <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
@@ -182,7 +187,7 @@
               <button type="submit" class="button more-btn">Показать</button>
             </form>
           </section>
-          <section class="catalog-products">
+          <section class="content-products">
             <h2 class="visually-hidden">Список товаров</h2>
             <ul class="products-list">
               <li class="products-item">
@@ -251,15 +256,16 @@
             </section>
           </div>
         </div>
-      </div>
+    </div>
+      </section>
     </main>
     <footer class="main-footer">
       <div class="container">
         <div class="footer-wrap">
-          <a class="footer-logo">
-            <img src="img/logo-header.svg" width="163" height="35" alt="Логотип Девайс">
+          <a class="footer-logo" href="index.html">
+            <img src="img/logo-footer.svg" width="163" height="35" alt="Логотип Девайс">
           </a>
-          <ul class="user-footer">
+          <ul class="user-footer-catalog">
             <li>
               <a class="person" href="#">Валентин Петухов</a>
             </li>
@@ -291,29 +297,29 @@
             <a href="tel:+74954959595">+7 (495) 495-95-95</a>
           </p>
         </div>
-          <div class="footer-contacts">
-            <ul class="social-list">
-              <li class="social-item">
-                <a class="social-link" href="#facebook" title="facebook">
-                  <img src="img/icon_facebook.svg" width="32" height="32" alt="Мы на Фейсбуке">
-                </a>
-              </li>
-              <li class="social-item">
-                <a class="social-link" href="#instagram" title="instagram">
-                  <img src="img/icon_instagram.svg" width="32" height="32" alt="Мы в Инстаграм">
-                </a>
-              </li>
-              <li class="social-item">
-                <a class="social-link" href="#twitter" title="twitter">
-                  <img src="img/icon_twitter.svg" width="32" height="32" alt="Мы в Твиттере">
-                </a>
-              </li>
-            </ul>
-            <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="img/logo-html.svg" width="27" height="34" alt="Разработано HTML Academy">
-            </a>
-          </div>
+        <div class="footer-contacts">
+          <ul class="social-list">
+            <li class="social-item">
+              <a class="social-link" href="#facebook" title="facebook">
+                <img src="img/icon_facebook.svg" width="32" height="32" alt="Мы на Фейсбуке">
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="#instagram" title="instagram">
+                <img src="img/icon_instagram.svg" width="32" height="32" alt="Мы в Инстаграм">
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="#twitter" title="twitter">
+                <img src="img/icon_twitter.svg" width="32" height="32" alt="Мы в Твиттере">
+              </a>
+            </li>
+          </ul>
+          <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-html.svg" width="27" height="34" alt="Разработано HTML Academy">
+          </a>
         </div>
+      </div>
     </footer>
   </body>
   </html>
