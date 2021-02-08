@@ -103,7 +103,6 @@
   color: var(--basic-black);
   text-align: left;
   padding: 0;
-  outline: 3px solid rgba(0, 255, 255, 0.7);
 }
 
 img {
@@ -146,14 +145,12 @@ img {
   width: 100%;
   display: grid;
   background-color: var(--basic-back);
-  outline: 3px solid rgba(0, 255, 0, 0.7);
   margin-top: 40px;
 }
 
 .header-wrap {
   display: grid;
   padding: 0 60px;
-  outline: 3px solid red;
 }
 
 .header-wrap ul {
@@ -246,7 +243,6 @@ img {
 
 .form-search {
   width: 440px;
-  outline: 3px solid orange;
   grid-column: 1 / span 6;
 }
 
@@ -256,20 +252,17 @@ img {
 
 .user-header {
   width: 500px;
-  outline: 3px solid purple;
   grid-template-columns: repeat(3, 1fr);
 }
 
 .user-header-catalog {
   width: 500px;
-  outline: 3px solid purple;
   grid-template-columns: max-content repeat(3, 1fr);
 }
 
 .header-navigation {
   display: grid;
   grid-template-columns: min-content 1fr;
-  outline: 3px solid blue;
 }
 
 
@@ -319,7 +312,6 @@ ul.goods {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: var(--basic-back);
-  outline: 3px solid red;
 }
 
 .goods li {
@@ -374,18 +366,15 @@ ul.goods {
   grid-template-columns: min-content 1fr;
   grid-gap: 40px;
   min-height: 500px;
-  outline: 3px solid blue;
 }
 
 .gallery-img {
   width: 526px;
   text-align: center;
-  outline: 3px solid red;
 }
 
 .gallery-info {
   grid-column: 7 / -1;
-  outline: 3px solid green;
 }
 
 .gallery-info .title {
@@ -423,7 +412,6 @@ ul.goods {
   color: var(--basic-black);
   margin-top: 184px;
   margin-bottom: 90px;
-  outline: 3px solid red;
 }
 
 .services {
@@ -431,7 +419,6 @@ ul.goods {
   grid-template-columns: min-content 1fr;
   padding-bottom: 64px;
   margin-top: -100px;
-  outline: 3px solid orange;
 }
 
 .services-nav {
@@ -533,7 +520,6 @@ a.more-btn {
 
 .categories {
   margin-top: 119px;
-  outline: 3px solid purple;
 }
 
 .categories ul {
@@ -543,7 +529,6 @@ a.more-btn {
   display: grid;
   grid-template-columns: repeat(6, 160px);
   grid-gap: 40px;
-  outline: 3px solid green;
 }
 
 .categories-item {
@@ -599,7 +584,6 @@ a.more-btn {
 
 .partners {
   margin-bottom: 90px;
-  outline: 3px solid red;
 }
 
 .partners-list {
@@ -611,10 +595,6 @@ a.more-btn {
   grid-template-rows: 100px;
   grid-gap: 40px;
   grid-column: 1 / -1;
-}
-
-.partner-item {
-  outline: 3px solid green;
 }
 
 .partner-item img:nth-child(2) {
@@ -638,7 +618,6 @@ a.more-btn {
   grid-template-columns: 1fr min-content;
   grid-gap: 40px;
   margin-bottom: 86px;
-  outline: 3px solid orange;
 }
 
 .contacts {
@@ -657,19 +636,16 @@ a.more-btn {
 .catalog-inner {
   display: grid;
   align-content: start;
-  outline: 3px solid purple;
 }
 
 .catalog-inner-wrap {
   padding-left: 60px;
-  outline: 3px solid blue;
 }
 
 .catalog-inner-title {
   grid-column: 1 / -1;
   margin: 0;
   margin-top: 43px;
-  outline: 3px solid rgba(255, 0, 0, 0.7);
 }
 
 .crumbs,
@@ -679,7 +655,6 @@ a.more-btn {
   list-style: none;
   margin: 0;
   padding: 0;
-  outline: 3px solid orange;
 }
 
 .crumbs {
@@ -722,7 +697,6 @@ a.crumbs {
   font-weight: 800;
   text-transform: uppercase;
   margin: 0;
-  outline: 3px solid rgba(255, 0, 0, 0.7);
 }
 
 .header-filter {
@@ -740,7 +714,6 @@ a.crumbs {
 .catalog-assort {
   display: grid;
   grid-template-columns: min-content 1fr min-content;
-  outline: 3px solid rgba(0, 0, 255);
 }
 
 .catalog-assort h3 {
@@ -752,7 +725,6 @@ a.crumbs {
   grid-template-columns: repeat(3, max-content);
   grid-gap: 30px;
   align-items: center;
-  outline: 3px solid red;
 }
 
 .catalog-assort-list li {
@@ -767,7 +739,6 @@ a.crumbs {
   color: var(--basic-black);
   text-decoration: none;
   opacity: 0.3;
-  outline: 3px solid rgba(0, 0, 255);
 }
 
 .catalog-assort-arrows {
@@ -775,13 +746,11 @@ a.crumbs {
   grid-template-columns: min-content min-content;
   grid-column-gap: 23px;
   align-items: center;
-  outline: 3px solid red;
 }
 
 .catalog-assort-arrows li {
   width: 10px;
   height: 11px;
-  outline: 3px solid green;
 }
 
 .catalog-assort-list a:hover {
@@ -802,7 +771,6 @@ a.crumbs {
   grid-template-columns: min-content 1fr;
   margin-top: 70px;
   margin-bottom: 78px;
-  outline: 3px solid rgba(0, 0, 255);
 }
 
 .filter {
@@ -810,7 +778,6 @@ a.crumbs {
   padding-left: 60px;
   padding-right: 68px;
   margin-right: 74px;
-  outline: 3px solid red;
 }
 
 
@@ -955,7 +922,6 @@ a.pagination-number-active {
 .main-footer {
   color: var(--basic-white);
   background-color: var(--basic-footer);
-  outline: 3px solid violet;
 }
 
 .main-footer .container {
@@ -967,13 +933,11 @@ a.pagination-number-active {
   display: grid;
   grid-template-columns: min-content 1fr;
   align-self: start;
-  outline: 3px solid red;
 }
 
 .footer-logo {
   width: 163px;
   margin-top: 20px;
-  outline: 3px solid green;
 }
 
 .footer-logo:hover {
@@ -1002,7 +966,6 @@ a.pagination-number-active {
   grid-gap: 40px;
   grid-column: 9 / -1;
   align-self: start;
-  outline: 3px solid orange;
 }
 
 .user-footer-catalog {
@@ -1011,7 +974,6 @@ a.pagination-number-active {
   grid-gap: 40px;
   grid-column: 5 / -1;
   align-self: start;
-  outline: 3px solid orange;
 }
 
 .user-footer-catalog .login-out {
@@ -1027,7 +989,6 @@ a.pagination-number-active {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   margin-top: 40px;
-  outline: 3px solid green;
 }
 
 .footer-wrap-center p {
@@ -1086,7 +1047,6 @@ p.footer-phone {
   display: grid;
   grid-template-columns: 1fr max-content;
   margin-top: 67px;
-  outline: 3px solid red;
 }
 
 .social-list {
@@ -1094,7 +1054,6 @@ p.footer-phone {
   grid-template-columns: repeat(3, 1fr);
   justify-self: center;
   grid-gap: 20px;
-  outline: 3px solid orange;
 }
 
 .social-link {
@@ -1149,7 +1108,6 @@ p.footer-phone {
   transform: translate(-50%, -50%);
   background-color: var(--basic-white);
   overflow: auto;
-  outline: 3px solid red;
 }
 
 .form-write-us {
@@ -1158,7 +1116,6 @@ p.footer-phone {
   padding-left: 100px;
   padding-right: 100px;
   padding-bottom: 69px;
-  outline: 3px solid green;
 }
 
 .write-us-wrap {
@@ -1199,6 +1156,5 @@ p.footer-phone {
   transform: translate(-50%, -50%);
   background-color: var(--basic-white);
   overflow: auto;
-  outline: 3px solid blue;
   opacity: 0.5;
 }
