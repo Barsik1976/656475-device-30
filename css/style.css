@@ -228,7 +228,6 @@ img {
 
 .form-search {
   width: 440px;
-  outline: 3px solid orange;
   grid-column: 1;
 }
 
