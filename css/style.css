@@ -534,10 +534,6 @@ ul.goods {
   background-color: var(--basic-black);
 }
 
-
-
-
-
 .more-btn {
   width: 200px;
   position: relative;
@@ -1365,7 +1361,7 @@ p.footer-phone {
 /*  Modal Form  */
 
 .modal {
-  display: block;
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
