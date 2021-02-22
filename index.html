@@ -13,62 +13,62 @@
 </head>
 <body class="page-body">
   <header class="main-header container">
-        <a class="header-logo">
-          <img src="img/logo-header.svg" width="163" height="35" alt="Логотип Девайс">
-        </a>
-        <div class="user-wrap">
-          <form class="form-search" action="http://echo.htmlacademy.ru" method="get">
-            <input type="search" placeholder="Поиск:">
-            <button type="submit" class="button search-button">Найти</button>
-          </form>
-          <ul class="user-header">
-            <li>
-              <a class="login-header" href="#">Войти</a>
+    <a class="header-logo">
+      <img src="img/logo-header.svg" width="163" height="35" alt="Логотип Девайс">
+    </a>
+    <div class="user-wrap">
+      <form class="form-search" action="http://echo.htmlacademy.ru" method="get">
+        <label class="visually-hidden" for="search-form-input">Поле поиска</label>        <input type="search" placeholder="Поиск по сайту" id="search-form-input">
+        <button type="submit" class="button search-button">Найти</button>
+      </form>
+      <ul class="user-header">
+        <li>
+          <a class="login-header" href="#">Войти</a>
+        </li>
+        <li>
+          <a class="compare-header" href="#">Сравнить</a>
+        </li>
+        <li>
+          <a class="cart-header" href="#">Корзина</a>
+        </li>
+      </ul>
+    </div>
+    <nav class="header-navigation">
+      <ul class="catalog">
+        <li class="catalog-item catalog-products">
+          <a href="#">Каталог товаров</a>
+          <ul class="goods">
+            <li class="goods-item">
+              <a href="#">Виртуальная реальность</a>
             </li>
-            <li>
-              <a class="compare-header" href="#">Сравнить</a>
+            <li class="goods-item">
+              <a href="catalog.html">Моноподы для селфи</a>
             </li>
-            <li>
-              <a class="cart-header" href="#">Корзина</a>
+            <li class="goods-item">
+              <a href="#">Экшн-камеры</a>
             </li>
-          </ul>
-        </div>
-        <nav class="header-navigation">
-          <ul class="catalog">
-            <li class="catalog-item catalog-products">
-              <a href="#">Каталог товаров</a>
-              <ul class="goods">
-                <li class="goods-item">
-                  <a href="#">Виртуальная реальность</a>
-                </li>
-                <li class="goods-item">
-                  <a href="catalog.html">Моноподы для селфи</a>
-                </li>
-                <li class="goods-item">
-                  <a href="#">Экшн-камеры</a>
-                </li>
-                <li class="goods-item">
-                  <a href="#">Фитнес-браслеты</a>
-                </li>
-                <li class="goods-item">
-                  <a href="#">Умные часы</a>
-                </li>
-                <li class="goods-item">
-                  <a href="#">Квадрокоптеры</a>
-                </li>
-              </ul>
+            <li class="goods-item">
+              <a href="#">Фитнес-браслеты</a>
             </li>
-            <li class="catalog-item">
-              <a href="#">Доставка</a>
+            <li class="goods-item">
+              <a href="#">Умные часы</a>
             </li>
-            <li class="catalog-item">
-              <a href="#">Гарантия</a>
-            </li>
-            <li class="catalog-item">
-              <a href="#">Контакты</a>
+            <li class="goods-item">
+              <a href="#">Квадрокоптеры</a>
             </li>
           </ul>
-        </nav>
+        </li>
+        <li class="catalog-item">
+          <a href="#">Доставка</a>
+        </li>
+        <li class="catalog-item">
+          <a href="#">Гарантия</a>
+        </li>
+        <li class="catalog-item">
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main class="page-main">
     <section class="container gallery">
@@ -80,10 +80,8 @@
           </div>
           <div class="gallery-info">
             <p class="gallery-title title">Делай селфи,<br> как Бен Стиллер!</p>
-            <p class="gallery-text text-site">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <div class="gallery-link-wrap">
-              <a class="more-btn" href="#">Подробнее</a>
-            </div>
+            <p class="gallery-text text-site">Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <a class="gallery-link more-btn" href="#">Подробнее</a>
             <table class="parameters">
               <tbody>
                 <tr>
@@ -91,10 +89,10 @@
                   <td>5 кг</td>
                   <td>Карбон</td>
                 </tr>
-                <tr>
-                  <th>Длина палки</th>
-                  <th>Вес палки</th>
-                  <th>Материал</th>
+                <tr class="parameters-name">
+                  <td>Длина палки</td>
+                  <td>Вес палки</td>
+                  <td>Материал</td>
                 </tr>
               </tbody>
             </table>
@@ -103,7 +101,7 @@
       </ul>
       <ul class="slider-controls">
         <li class="slider-toggle">
-          <button type="button">Первый</button>
+          <button class="slider-btn-active" type="button">Первый</button>
         </li>
         <li class="slider-toggle">
           <button type="button">Второй</button>
@@ -181,17 +179,17 @@
           </li>
         </ul>
         <div class="service-info">
-          <div class="service-block service-block-show">
+          <div class="service-delivery service-block service-block-show">
             <h2>Доставка</h2>
             <p class="text-site">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </div>
-          <div class="service-block service-block-no">
+          <div class="service-guarantee service-block service-block-no">
             <h2>Гарантия</h2>
             <p class="text-site">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br> Товар, не дом, конечно же.</p>
           </div>
-          <div class="service-block service-block-no">
+          <div class="service-credit service-block service-block-no">
             <h2>Кредит</h2>
-            <p class="text-site">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+            <p class="text-site">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита.<br> Выгодные для нашего банка, разумеется.</p>
           </div>
         </div>
       </div>
@@ -308,11 +306,11 @@
       <div class="write-us-wrap">
         <p class="write-us-item">
           <label for="user-name">Ваше имя:</label>
-          <input type="text" name="name" placeholder="Имя Фамилия" id="user-name">
+          <input type="text" name="name" placeholder="Имя Фамилия" id="user-name" required>
         </p>
         <p class="write-us-item">
           <label for="user-mail">Ваш e-mail:</label>
-          <input type="email" name="e-mail" placeholder="email@example.com" id="user-mail">
+          <input type="email" name="e-mail" placeholder="email@example.com" id="user-mail" required>
         </p>
       </div>
       <p class="write-us-item field-text">
@@ -325,7 +323,10 @@
   </section>
   <section class="modal-map modal-show">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <!-- Здесь будет карта -->
+    <iframe>
+
+    </iframe>
+    <img src="img/map-big.png" alt="Офис компании по адресу Улица строителей, 15, г. Москва" width="960" height="560">
     <button class="modal-close" type="button"></button>
   </section>
 </body>

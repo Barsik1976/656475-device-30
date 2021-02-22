@@ -18,7 +18,7 @@
     </a>
     <div class="user-wrap">
       <form class="form-search" action="http://echo.htmlacademy.ru" method="get">
-        <input type="search" placeholder="Поиск:">
+        <input type="search" placeholder="Поиск по сайту">
         <button type="submit" class="button search-button">Найти</button>
       </form>
       <ul class="user-header-catalog">
@@ -36,7 +36,7 @@
         </li>
       </ul>
     </div>
-    <nav class="header-navigation">
+    <nav class="header-navigation-catalog">
       <ul class="catalog">
         <li class="catalog-item catalog-products">
           <a href="#">Каталог товаров</a>
@@ -111,10 +111,10 @@
                 </ul>
                 <ul class="catalog-assort-arrows">
                   <li class="assort-arrow-item">
-                    <a class="arrow-up" href="#"></a>
+                    <a class="arrow-up" href="#">По возрастанию</a>
                   </li>
                   <li class="assort-arrow-item">
-                    <a class="arrow-down" href="#"></a>
+                    <a class="arrow-down" href="#">По убыванию</a>
                   </li>
                 </ul>
               </div>
@@ -128,18 +128,22 @@
               <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
                 <fieldset class="filter-list">
                   <legend>Стоимость</legend>
-                  <div class="filter-price-range">
-                    <div class="price-controls">
+                  <div class="filter-range">
+                    <div class="range-controls">
                       <div class="scale">
-                        <div class="bar"></div>
+                        <div class="bar" style="width: 60%; margin-left: 5%"></div>
                       </div>
-                      <div class="range-toggle range-toggle-min"></div>
-                      <div class="range-toggle range-toggle-max"></div>
+                      <div class="range-toggle range-toggle-min" tabindex="0" style="left: 0"></div>
+                      <div class="range-toggle range-toggle-max" tabindex="0" style="left: 60%"></div>
                     </div>
-                    <label class="price-label" for="min-price">от</label>
-                    <input class="price-option" type="text" name="min-price" id="min-price" value="0">
-                    <label class="price-label" for="max-price">до</label>
-                    <input class="price-option" type="text" name="max-price" id="max-price" value="5000">
+                    <div class="price-controls">
+                      <label class="min-price">от
+                        <input type="number" name="min-price" value="0">
+                      </label>
+                      <label class="max-price">до
+                        <input type="number" name="max-price" value="5000">
+                      </label>
+                    </div>
                   </div>
                 </fieldset>
                 <fieldset class="filter-list">
