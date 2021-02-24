@@ -131,6 +131,13 @@ img {
   margin: 0;
 }
 
+.text-site {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  margin: 0;
+}
+
 
 
 
@@ -211,7 +218,6 @@ img {
   left: 0;
   transform: translateY(-50%);
   background-repeat: no-repeat;
-  background-size: 100% auto;
   background-position: 0 0;
 }
 
@@ -220,21 +226,21 @@ img {
 }
 
 .login-header::before {
-  width: 8px;
-  height: 9px;
-  background-image: url("../img/icon-login-header.svg");
+  width: 13px;
+  height: 14px;
+  background-image: url("../img/icon_user-header.svg");
 }
 
 .user-header-catalog .person::before {
-  width: 8px;
-  height: 9px;
-  background-image: url("../img/icon-login-header.svg");
+  width: 13px;
+  height: 14px;
+  background-image: url("../img/icon_user-header.svg");
 }
 
 .compare-header::before {
-  width: 8px;
-  height: 8px;
-  background-image: url("../img/icon-compare-header.svg");
+  width: 14px;
+  height: 14px;
+  background-image: url("../img/icon_chart-header.svg");
 }
 
 .cart-header::before {
@@ -254,6 +260,7 @@ img {
 
 .user-header li,
 .user-header-catalog li {
+  line-height: 20px;
   justify-self: end;
 }
 
@@ -587,11 +594,10 @@ ul.goods {
   margin: 0;
   padding: 0;
   right: 100px;
-  bottom: 137px;
+  bottom: 140px;
 }
 
 .slider-toggle {
-  line-height: 24px;
   margin-left: 18px;
 }
 
@@ -734,20 +740,6 @@ button.slider-btn-active::before {
   margin-top: 80px;
 }
 
-.service-item:hover .more-btn {
-  background-color: var(--basic-button-more);
-  color: var(--basic-black);
-  opacity: 1.0;
-}
-
-.service-item:active .more-btn {
-  color: var(--basic-back);
-  background: transparent;
-  border: none;
-  border-radius: 0;
-  opacity: 1.0;
-}
-
 .service-item:active .more-btn:after {
   width: 280px;
   height: 40px;
@@ -763,23 +755,13 @@ button.slider-btn-active::before {
   background-color: var(--basic-black);
 }
 
-button.service-btn-current {
-  color: var(--basic-back);
-  background: var(--basic-black);
-}
-
-.service-item:hover .service-btn-current {
-  color: var(--basic-back);
-  background-color: var(--basic-black);
-}
-
 .more-btn {
   position: relative;
   display: block;
-  width: 200px;
+  max-width: 164px;
   font-family: var(--title-family);
   font-size: var(--nav-title-size);
-  line-height: var(--nav-title-line);
+  line-height: 20px;
   font-weight: var(--title-weight);
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -789,6 +771,10 @@ button.service-btn-current {
   border: none;
   outline: none;
   text-decoration: none;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .more-btn:after {
@@ -797,10 +783,15 @@ button.service-btn-current {
   width: 200px;
   height: 8px;
   top: 50%;
-  left: 0;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: var(--basic-button-more);
   z-index: -1;
+}
+
+.more-btn:hover,
+.more-btn:active {
+  background-color: var(--basic-button-more);
 }
 
 .more-btn:active {
@@ -809,21 +800,48 @@ button.service-btn-current {
 
 .more-btn:hover:after,
 .more-btn:active:after {
-  height: 40px;
+  min-height: 40px;
   transition: 0.3s ease-in-out;
 }
 
-.text-site {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  margin: 0;
+.service-btn-current::after {
+  left: 0;
+  transform: translate(0, -50%);
+}
+
+.service-item:hover .more-btn {
+  background-color: var(--basic-button-more);
+  color: var(--basic-black);
+  opacity: 1.0;
+}
+
+.service-item:active .more-btn {
+  color: var(--basic-back);
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  opacity: 1.0;
+}
+
+.service-item:hover .more-btn:after {
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+}
+
+button.service-btn-current {
+  color: var(--basic-back);
+  background-color: transparent;
+}
+
+.service-item:hover .service-btn-current {
+  color: var(--basic-back);
+  background-color: transparent;
 }
 
 .service-info .text-site {
   line-height: 30px;
 }
-
 
 
 
@@ -965,7 +983,7 @@ button.service-btn-current {
 }
 
 .about-wrap-link {
-  min-width: 260px;
+  max-width: 224px;
 }
 
 .delivery-partners {
@@ -1663,7 +1681,6 @@ a.pagination-number-active {
   transform: translateY(-50%);
   background-repeat: no-repeat;
   background-position: 0 0;
-  outline: 0.5px solid red;
 }
 
 .login::before {
