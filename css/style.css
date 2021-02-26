@@ -50,6 +50,7 @@
   --basic-input: #f2f2f2;
   --basic-input-hover: #eaeaea;
   --basic-input-invalid: #f6dada;
+  --basic-pagination-back: #d9d9d9;
   --basic-footer: #363636;
   --basic-range: #91c92f;
   --title-family: "Gilroy", "Arial", sans-serif;
@@ -1327,8 +1328,14 @@ a.catalog-assort-active:hover {
   height: 380px;
 }
 
-.product-image:hover img {
-  opacity: 0.7;
+.product-image:hover .product-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 360px;
+  height: 380px;
+  background-color: rgba(238, 238, 238, 0.7);
+  z-index: 3;
 }
 
 .info-hover {
@@ -1384,6 +1391,9 @@ a.catalog-assort-active:hover {
   color: var(--basic-black);
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.pagination-number a {
   opacity: 0.3;
 }
 
@@ -1399,7 +1409,6 @@ a.catalog-assort-active:hover {
   background: transparent;
 }
 
-a.pagination-btn-active,
 .pagination-number a:active,
 a.pagination-number-active {
   opacity: 1.0;
@@ -1407,15 +1416,16 @@ a.pagination-number-active {
 
 .pagination-btn-back:hover,
 .pagination-btn-next:hover {
-  background-color: var(--basic-number-hover);
+  background-color: var(--basic-pagination-back);
   opacity: 1.0;
 }
 
 .pagination-btn-back:active,
 .pagination-btn-next:active {
-  background-color: var(--basic-number-hover);
+  background-color: var(--basic-pagination-back);
   opacity: 0.3;
 }
+
 
 
 
@@ -1594,14 +1604,12 @@ a.pagination-number-active {
 }
 
 .filter-form button {
-  position: relative;
-  padding: 0;
-  margin-top: 19px;
+  max-width: 200px;
   border: none;
   outline: none;
   z-index: 10;
+  cursor: pointer;
 }
-
 
 
 
