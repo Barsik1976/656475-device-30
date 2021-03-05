@@ -74,9 +74,9 @@
     <section class="container gallery">
       <h2 class="visually-hidden">Галерея товаров</h2>
       <ul class="gallery-list">
-        <li class="gallery-item">
+        <li class="gallery-item gallery-item-1">
           <div class="gallery-img">
-            <img src="img/slider-main-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
+            <img src="img/slider-main-1-compres.png" width="384" height="486" alt="Самая длинная палка для селфи">
           </div>
           <div class="gallery-info">
             <p class="gallery-title title">Делай селфи,<br> как Бен Стиллер!</p>
@@ -93,6 +93,48 @@
                   <td>Длина палки</td>
                   <td>Вес палки</td>
                   <td>Материал</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+        <li class="gallery-item gallery-item-2">
+          <div class="gallery-img">
+            <img src="img/slider-main-2.png" width="345" height="485" alt="Фитнес-браслет">
+          </div>
+          <div class="gallery-info">
+            <p class="gallery-title title">Худеем<br> правильно!</p>
+            <p class="gallery-text text-site">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+            <a class="gallery-link more-btn" href="#">Подробнее</a>
+            <table class="parameters">
+              <tbody>
+                <tr>
+                  <td>48 часов</td>
+                </tr>
+                <tr class="parameters-name">
+                  <td>Без подзарядки</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+        <li class="gallery-item gallery-item-3">
+          <div class="gallery-img">
+            <img src="img/slider-main-3.png" width="526" height="334" alt="Самая длинная палка для селфи">
+          </div>
+          <div class="gallery-info">
+            <p class="gallery-title title">Порхает как бабочка, жалит как пчела!</p>
+            <p class="gallery-text text-site">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+            <a class="gallery-link more-btn" href="#">Подробнее</a>
+            <table class="parameters">
+              <tbody>
+                <tr>
+                  <td>800 м</td>
+                  <td>50 м</td>
+                </tr>
+                <tr class="parameters-name">
+                  <td>Дальность полета</td>
+                  <td>Радиус поражения</td>
                 </tr>
               </tbody>
             </table>
@@ -168,7 +210,7 @@
       <div class="container services">
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="services-nav">
-          <li class="service-item">
+          <li class="service-item service-item-current">
             <button class="service-btn-current more-btn" type="button">Доставка</button>
           </li>
           <li class="service-item">
@@ -229,7 +271,7 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a class="about-wrap-link more-btn" href="#">Подробнее о нас</a>
+        <a class="more-btn" href="#">Подробнее о нас</a>
       </section>
       <section class="contacts">
         <h2 class="title">Контакты</h2>
@@ -237,7 +279,7 @@
         <a class="contacts-map" href="#">
           <img src="img/map-office.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
         </a>
-        <a class="about-wrap-link more-btn" href="#">Напишите нам</a>
+        <a class="about-wrap-write more-btn" href="#">Напишите нам</a>
       </section>
     </div>
   </main>
@@ -309,7 +351,7 @@
       </div>
     </div>
   </footer>
-  <section class="modal modal-show">
+  <section class="modal modal-write-us">
     <h2 class="visually-hidden">Напишите нам</h2>
     <form class="form-write-us" action="http://echo.htmlacademy.ru" method="post">
       <div class="write-us-wrap">
@@ -330,13 +372,15 @@
     </form>
     <button class="modal-close" type="button"></button>
   </section>
-  <section class="modal-map modal-show">
+  <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <iframe>
-
-    </iframe>
-    <img src="img/map-big.png" alt="Офис компании по адресу Улица строителей, 15, г. Москва" width="960" height="560">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d1190963.9426648377!2d40.6742481!3d54.337515!3m2!1i1024!2i768!4f13.1!3m2!1m1!2z0YPQuy4g0LMuINCc0L7RgdC60LLQsCwg0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1!5e0!3m2!1sru!2sru!4v1614601480240!5m2!1sru!2sru" width="960" height="573" style="border:0;" allowfullscreen=""></iframe>
+    <p>
+      <img src="img/map-big-1.jpg" alt="Офис компании по адресу улица Строителей, 15, г. Москва" width="960" height="573">
+    </p>
     <button class="modal-close" type="button"></button>
   </section>
+  <script src="js/popup.js"></script>
+  <script src="js/map.js"></script>
 </body>
 </html>
