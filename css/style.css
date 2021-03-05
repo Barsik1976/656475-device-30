@@ -282,7 +282,9 @@ a.login-out::before {
 }
 
 
+
 /*  Form-header  */
+
 
 .form-search {
   position: relative;
@@ -293,7 +295,6 @@ a.login-out::before {
 .form-search input[type="search"] {
   width: 356px;
   height: 50px;
-  color: var(--basic-black);
   background: transparent;
   padding-left: 38px;
   padding-right: 20px;
@@ -302,10 +303,31 @@ a.login-out::before {
   border-bottom: 2px solid transparent;
 }
 
-.form-search placeholder {
+.form-search::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+
+.form-search input[type="search"]::-webkit-input-placeholder {
   font-family: inherit;
   font-size: 15px;
   line-height: 20px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.form-search:hover input[type="search"]::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.form-search:focus-within input[type="search"] {
+  border-bottom: 2px solid #000000;
 }
 
 .form-search button {
@@ -322,48 +344,21 @@ a.login-out::before {
   cursor: pointer;
 }
 
-.form-search::before {
-  position: absolute;
-  content: "";
-  width: 50px;
-  height: 50px;
-  top: 0;
-  left: 0;
-  background-image: url("../img/icon-search.svg");
-  background-repeat: no-repeat;
-  background-position: 0 50%;
-}
-
-.form-search input:hover {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.form-search input:focus {
-  color: rgba(0, 0, 0, 1.0);
-}
-
-.form-search input[type="search"]:active {
-  border-bottom: 2px solid rgba(0, 0, 0, 1.0);
-}
-
-.form-search input[type="search"]:active .search-button {
-  color: rgba(255, 255, 255, 1.0);
-  background-color: rgba(0, 0, 0, 1.0);
-}
-
-.form-search:active .search-button {
+.form-search:focus-within button {
   visibility: visible;
 }
 
-.form-search .search-button:hover,
-.form-search .search-button:focus {
+.search-button:hover {
   color: rgba(255, 255, 255, 1.0);
   background-color: rgba(0, 0, 0, 1.0);
 }
 
-.form-search .search-button:active {
+.search-button:active {
   color: rgba(255, 255, 255, 0.3);
 }
+
+
+
 
 
 
@@ -526,7 +521,6 @@ ul.goods {
   color: var(--basic-black);
   background: transparent;
   border: none;
-  outline: none;
   text-decoration: none;
   padding-left: 18px;
   padding-right: 18px;
@@ -547,6 +541,7 @@ ul.goods {
 }
 
 .more-btn:hover,
+.more-btn:focus-within,
 .more-btn:active {
   background-color: var(--basic-button-more);
 }
@@ -556,6 +551,7 @@ ul.goods {
 }
 
 .more-btn:hover:after,
+.more-btn:focus-within:after,
 .more-btn:active:after {
   height: 40px;
   transition: 0.3s ease-in-out;
@@ -563,17 +559,16 @@ ul.goods {
 
 .gallery {
   position: relative;
-  width: 1160px;
   margin-top: -130px;
+  padding: 0;
 }
 
 .gallery-list {
   display: flex;
-  justify-items: center;
   list-style: none;
-  overflow: hidden;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 .gallery-item {
@@ -583,7 +578,6 @@ ul.goods {
 }
 
 .gallery-img {
-  width: 560px;
   text-align: center;
   outline: 2px solid green;
 }
@@ -598,7 +592,6 @@ ul.goods {
 
 .gallery-info {
   position: relative;
-  width: 560px;
   outline: 2px solid red;
 }
 
@@ -1312,7 +1305,8 @@ a.catalog-assort-active {
 }
 
 
-.catalog-assort-arrows a:hover {
+.catalog-assort-arrows a:hover,
+.catalog-assort-arrows a:focus {
   opacity: 0.4;
 }
 
@@ -1487,7 +1481,8 @@ a.catalog-assort-active:hover {
   opacity: 0.3;
 }
 
-.pagination-number a:hover {
+.pagination-number a:hover,
+.pagination-number a:focus {
   opacity: 0.6;
 }
 
@@ -1504,14 +1499,13 @@ a.pagination-number-active {
   opacity: 1.0;
 }
 
-.pagination-btn-back:hover,
-.pagination-btn-next:hover {
+.pagination-btn:hover,
+.pagination-btn:focus {
   background-color: var(--basic-pagination-back);
   opacity: 1.0;
 }
 
-.pagination-btn-back:active,
-.pagination-btn-next:active {
+.pagination-btn:active {
   background-color: var(--basic-pagination-back);
   opacity: 0.3;
 }
@@ -1621,7 +1615,8 @@ a.pagination-number-active {
   color: #a6a6a6;
 }
 
-.filter-list li:hover label {
+.filter-list li:hover label,
+.filter-list li:focus-within label {
   opacity: 0.6;
 }
 
