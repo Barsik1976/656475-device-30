@@ -579,7 +579,6 @@ ul.goods {
 
 .gallery-img {
   text-align: center;
-  outline: 2px solid green;
 }
 
 .gallery-item-2 .gallery-img {
@@ -590,9 +589,16 @@ ul.goods {
   padding-top: 82px;
 }
 
+.gallery-item-2 {
+  display: none;
+}
+
+.gallery-item-3 {
+  display: none;
+}
+
 .gallery-info {
   position: relative;
-  outline: 2px solid red;
 }
 
 .gallery-info::before {
@@ -628,24 +634,6 @@ ul.goods {
 .gallery-item-3 .gallery-info::after {
   content: "03";
 }
-
-
-
-
-.gallery-item-1 {
-  background-color: orange;
-}
-
-.gallery-item-2 {
-  background-color: purple;
-}
-
-.gallery-item-3 {
-  background-color: pink;
-}
-
-
-
 
 .gallery-title {
   position: relative;
