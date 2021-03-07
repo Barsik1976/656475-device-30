@@ -565,7 +565,6 @@ ul.goods {
 
 .gallery-list {
   display: flex;
-  visibility: visible;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -591,11 +590,11 @@ ul.goods {
 }
 
 .gallery-item-1 {
-  visibility: hidden;
+  visibility: visible;
 }
 
 .gallery-item-2 {
-  visibility: visible;
+  visibility: hidden;
 }
 
 .gallery-item-3 {
