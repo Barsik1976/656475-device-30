@@ -565,6 +565,7 @@ ul.goods {
 
 .gallery-list {
   display: flex;
+  visibility: visible;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -589,16 +590,21 @@ ul.goods {
   padding-top: 82px;
 }
 
+.gallery-item-1 {
+  visibility: hidden;
+}
+
 .gallery-item-2 {
-  display: none;
+  visibility: visible;
 }
 
 .gallery-item-3 {
-  display: none;
+  visibility: hidden;
 }
 
 .gallery-info {
   position: relative;
+  counter-reset: gallery-item;
 }
 
 .gallery-info::before {
@@ -613,7 +619,8 @@ ul.goods {
 
 .gallery-info::after {
   position: absolute;
-  display: block;
+  counter-increment: gallery-item;
+  content: counter(gallery-item, decimal-leading-zero);
   top: 0;
   right: 47px;
   font-family: var(--title-family);
@@ -621,18 +628,6 @@ ul.goods {
   line-height: 180px;
   font-weight: 800;
   color: #ffffff;
-}
-
-.gallery-item-1 .gallery-info::after {
-  content: "01";
-}
-
-.gallery-item-2 .gallery-info::after {
-  content: "02";
-}
-
-.gallery-item-3 .gallery-info::after {
-  content: "03";
 }
 
 .gallery-title {
@@ -671,9 +666,11 @@ a.gallery-link {
   padding: 0;
 }
 
-.parameters-name td {
+.parameters th {
   font-size: 13px;
+  font-weight: 300;
   line-height: 15px;
+  letter-spacing: 0.1em;
   padding-top: 10px;
 }
 
@@ -683,6 +680,7 @@ a.gallery-link {
 
 .slider-controls {
   position: absolute;
+  max-width: 90px;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -749,7 +747,7 @@ button.slider-btn-active::before {
   padding: 0;
   border-right: 7px solid #000000;
   min-height: 320px;
-  z-index: 15;
+  z-index: 0;
 }
 
 .services-nav button {
@@ -835,9 +833,12 @@ button.slider-btn-active::before {
   width: 100%;
 }
 
+.service-item:first-child {
+  margin-top: 80px;
+}
+
 .service-item-current {
   background-color: var(--basic-black);
-  margin-top: 80px;
 }
 
 .service-item:active .more-btn:after {
@@ -862,6 +863,8 @@ button.slider-btn-active::before {
 .service-item:hover .more-btn {
   background-color: var(--basic-button-more);
   color: var(--basic-black);
+  outline: none;
+  background: transparent;
   opacity: 1.0;
 }
 
@@ -870,6 +873,8 @@ button.slider-btn-active::before {
   background: transparent;
   border: none;
   border-radius: 0;
+  outline: none;
+  background: transparent;
   opacity: 1.0;
 }
 
@@ -881,6 +886,10 @@ button.slider-btn-active::before {
 
 .service-item-current:hover .service-btn-current {
   color: var(--basic-back);
+  background-color: transparent;
+}
+
+.service-item-current:hover .more-btn:after {
   background-color: transparent;
 }
 
@@ -1839,7 +1848,7 @@ a.pagination-number-active {
 
 .footer-navigation {
   display: grid;
-  grid-template-columns: repeat(3, min-content);
+  grid-template-columns: repeat(3, max-content);
   column-gap: 36px;
   row-gap: 20px;
   justify-self: center;
@@ -1907,7 +1916,7 @@ p.footer-phone {
 .footer-contacts {
   display: grid;
   grid-template-columns: 200px 1fr 200px;
-  align-items: center;
+  align-items: start;
   margin-top: 67px;
 }
 
@@ -1915,15 +1924,15 @@ p.footer-phone {
   content: "";
   width: 80px;
   height: 7px;
+  margin-top: 15px;
   background-color: var(--basic-icons);
 }
 
 .social-list {
   display: grid;
-  grid-template-columns: repeat(3, 32px);
-  justify-self: center;
+  grid-template-columns: repeat(auto-fit, 32px);
   gap: 20px;
-}
+justify-content: center;}
 
 .social-item {
   width: 32px;
@@ -2057,7 +2066,8 @@ p.write-us-item {
 
 .write-us-item textarea {
   width: 720px;
-  min-height: 132px;
+  height: 132px;
+  resize: none;
 }
 
 .form-write-us button {

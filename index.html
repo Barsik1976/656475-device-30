@@ -9,7 +9,7 @@
   <link rel="apple-touch-icon" href="favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-body">
   <header class="main-header container">
@@ -73,7 +73,7 @@
   <main class="page-main">
     <section class="container gallery">
       <h2 class="visually-hidden">Галерея товаров</h2>
-      <ul class="gallery-list">
+      <ol class="gallery-list">
         <li class="gallery-item gallery-item-1">
           <div class="gallery-img">
             <img src="img/slider-main-1-compres.png" width="384" height="486" alt="Самая длинная палка для селфи">
@@ -89,10 +89,10 @@
                   <td>5 кг</td>
                   <td>Карбон</td>
                 </tr>
-                <tr class="parameters-name">
-                  <td>Длина палки</td>
-                  <td>Вес палки</td>
-                  <td>Материал</td>
+                <tr>
+                  <th>Длина палки</th>
+                  <th>Вес палки</th>
+                  <th>Материал</th>
                 </tr>
               </tbody>
             </table>
@@ -111,8 +111,8 @@
                 <tr>
                   <td>48 часов</td>
                 </tr>
-                <tr class="parameters-name">
-                  <td>Без подзарядки</td>
+                <tr>
+                  <th>Без подзарядки</th>
                 </tr>
               </tbody>
             </table>
@@ -132,15 +132,15 @@
                   <td>800 м</td>
                   <td>50 м</td>
                 </tr>
-                <tr class="parameters-name">
-                  <td>Дальность полета</td>
-                  <td>Радиус поражения</td>
+                <tr>
+                  <th>Дальность полета</th>
+                  <th>Радиус поражения</th>
                 </tr>
               </tbody>
             </table>
           </div>
         </li>
-      </ul>
+      </ol>
       <ul class="slider-controls">
         <li class="slider-toggle">
           <button class="slider-btn-active" type="button">Первый</button>
