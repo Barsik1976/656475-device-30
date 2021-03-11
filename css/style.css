@@ -1145,7 +1145,7 @@ button.slider-btn-active::before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 76px;
+  margin-bottom: 78px;
 }
 
 .about-wrap section {
@@ -1160,7 +1160,7 @@ button.slider-btn-active::before {
   position: relative;
   letter-spacing: 0.2em;
   padding-top: 55px;
-  margin-bottom: 43px;
+  margin-bottom: 40px;
 }
 
 .about-wrap h2:before {
@@ -1175,7 +1175,14 @@ button.slider-btn-active::before {
 
 .about-wrap p {
   margin-bottom: 40px;
-  padding-right: 60px;
+}
+
+.about-us p {
+  padding-right: 65px;
+}
+
+.contacts p {
+  padding-right: 20px;
 }
 
 .about-wrap .more-btn {
