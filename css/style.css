@@ -359,7 +359,8 @@ a.login-out::before {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.form-search:focus-within input[type="search"] {
+.form-search:focus-within input[type="search"],
+.form-search input[type="search"]:valid {
   border-bottom: 2px solid #000000;
 }
 
@@ -377,7 +378,8 @@ a.login-out::before {
   cursor: pointer;
 }
 
-.form-search:focus-within button {
+.form-search:focus-within button,
+.form-search:valid button {
   visibility: visible;
 }
 
@@ -878,6 +880,7 @@ button.slider-btn-active::before {
 
 .service-block {
   position: relative;
+  display: none;
   padding-right: 200px;
 }
 
@@ -886,12 +889,8 @@ button.slider-btn-active::before {
   margin: 0;
 }
 
-.service-block-show {
-  display: block;
-}
-
-.service-block-no {
-  display: none;
+.service-block-active {
+  display: grid;
 }
 
 .service-delivery {
@@ -938,11 +937,13 @@ button.slider-btn-active::before {
   margin-top: 80px;
 }
 
-.service-item-current {
+button.service-btn-current {
+  width: 277px;
   background-color: var(--basic-black);
+  outline: 1px solid red;
 }
 
-.service-item:active .more-btn:after {
+.service-item:active .more-btn::after {
   width: 280px;
   height: 40px;
   background-color: var(--basic-black);
@@ -955,7 +956,7 @@ button.slider-btn-active::before {
   background-color: transparent;
 }
 
-.service-btn-current:after {
+.service-btn-current::after {
   min-height: 40px;
   left: 0;
   -webkit-transform: translate(0, -50%);
@@ -963,7 +964,7 @@ button.slider-btn-active::before {
           transform: translate(0, -50%);
 }
 
-.service-item:hover .more-btn {
+.service-item:hover .service-btn-current:not(:hover) {
   background-color: var(--basic-button-more);
   color: var(--basic-black);
   outline: none;
@@ -971,7 +972,7 @@ button.slider-btn-active::before {
   opacity: 1.0;
 }
 
-.service-item:active .more-btn {
+.service-item:active:not(.service-btn-current) {
   color: var(--basic-back);
   background: transparent;
   border: none;
@@ -981,7 +982,11 @@ button.slider-btn-active::before {
   opacity: 1.0;
 }
 
-.service-item:hover .more-btn:after {
+
+
+
+
+.service-item:hover .more-btn::after {
   top: 50%;
   left: 0;
   -webkit-transform: translate(0, -50%);
@@ -989,16 +994,11 @@ button.slider-btn-active::before {
           transform: translate(0, -50%);
 }
 
-.service-item-current:hover .service-btn-current {
-  color: var(--basic-back);
-  background-color: transparent;
-}
-
-.service-btn-current:focus-within {
+.service-item:focus-within .service-btn-current {
   outline: none;
 }
 
-.service-item-current:hover .more-btn:after {
+.service-item:hover .service-btn-current::after {
   background-color: transparent;
 }
 

@@ -18,7 +18,7 @@
     </a>
     <div class="user-wrap">
       <form class="form-search" action="http://echo.htmlacademy.ru" method="get">
-        <label class="visually-hidden" for="search-form-input">Поле поиска</label>        <input type="search" placeholder="Поиск по сайту" id="search-form-input">
+        <label class="visually-hidden" for="search-form-input">Поле поиска</label>        <input type="search" placeholder="Поиск по сайту" id="search-form-input" required>
         <button type="submit" class="button search-button">Найти</button>
       </form>
       <ul class="user-header">
@@ -210,7 +210,7 @@
       <div class="container services">
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="services-nav">
-          <li class="service-item service-item-current">
+          <li class="service-item">
             <button class="service-btn-current more-btn" type="button">Доставка</button>
           </li>
           <li class="service-item">
@@ -221,15 +221,15 @@
           </li>
         </ul>
         <div class="service-info">
-          <div class="service-delivery service-block service-block-show">
+          <div class="service-delivery service-block service-block-active">
             <h2 class="title">Доставка</h2>
             <p class="text-site">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </div>
-          <div class="service-guarantee service-block service-block-no">
+          <div class="service-guarantee service-block">
             <h2 class="title">Гарантия</h2>
             <p class="text-site">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br> Товар, не дом, конечно же.</p>
           </div>
-          <div class="service-credit service-block service-block-no">
+          <div class="service-credit service-block">
             <h2 class="title">Кредит</h2>
             <p class="text-site">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные<br> условия кредита. Выгодные для нашего банка, разумеется.</p>
           </div>
@@ -370,7 +370,7 @@
       </p>
       <button class="more-btn" type="submit">Отправить</button>
     </form>
-    <button class="modal-close" type="button"></button>
+    <button class="modal-close" type="button">Закрыть окно</button>
   </section>
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
@@ -378,7 +378,7 @@
     <p>
       <img src="img/map-big-1.jpg" alt="Офис компании по адресу улица Строителей, 15, г. Москва" width="960" height="573">
     </p>
-    <button class="modal-close" type="button"></button>
+    <button class="modal-close" type="button">Закрыть окно</button>
   </section>
   <script src="js/popup.js"></script>
   <script src="js/map.js"></script>
