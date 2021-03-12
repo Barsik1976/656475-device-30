@@ -589,7 +589,7 @@ ul.goods {
   padding-bottom: 10px;
 }
 
-.more-btn:after {
+.more-btn::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -613,9 +613,9 @@ ul.goods {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.more-btn:hover:after,
-.more-btn:focus-within:after,
-.more-btn:active:after {
+.more-btn:hover::after,
+.more-btn:focus-within::after,
+.more-btn:active::after {
   height: 40px;
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
@@ -859,7 +859,7 @@ button.slider-btn-active::before {
   border: none;
 }
 
-.services-nav button:after {
+.services-nav button::after {
   width: 100%;
 }
 
@@ -937,15 +937,9 @@ button.slider-btn-active::before {
   margin-top: 80px;
 }
 
-button.service-btn-current {
-  width: 277px;
-  background-color: var(--basic-black);
-  outline: 1px solid red;
-}
-
 .service-item:active .more-btn::after {
   width: 280px;
-  height: 40px;
+  height: 100%;
   background-color: var(--basic-black);
   text-align: left;
   opacity: 1.0;
@@ -956,15 +950,18 @@ button.service-btn-current {
   background-color: transparent;
 }
 
-.service-btn-current::after {
-  min-height: 40px;
+button.service-btn-current::after {
+  content: "";
+  width: 277px;
+  height: 100%;
   left: 0;
   -webkit-transform: translate(0, -50%);
       -ms-transform: translate(0, -50%);
           transform: translate(0, -50%);
+  background-color: var(--basic-black);
 }
 
-.service-item:hover .service-btn-current:not(:hover) {
+.service-item:hover .more-btn {
   background-color: var(--basic-button-more);
   color: var(--basic-black);
   outline: none;
@@ -972,7 +969,7 @@ button.service-btn-current {
   opacity: 1.0;
 }
 
-.service-item:active:not(.service-btn-current) {
+.service-item:active .more-btn {
   color: var(--basic-back);
   background: transparent;
   border: none;
@@ -982,10 +979,6 @@ button.service-btn-current {
   opacity: 1.0;
 }
 
-
-
-
-
 .service-item:hover .more-btn::after {
   top: 50%;
   left: 0;
@@ -994,12 +987,13 @@ button.service-btn-current {
           transform: translate(0, -50%);
 }
 
-.service-item:focus-within .service-btn-current {
-  outline: none;
+.service-item:hover .service-btn-current {
+  color: var(--basic-back);
+  background-color: transparent;
 }
 
-.service-item:hover .service-btn-current::after {
-  background-color: transparent;
+.service-btn-current:focus-within {
+  outline: none;
 }
 
 .service-info .text-site {
@@ -1189,7 +1183,7 @@ button.service-btn-current {
   width: 224px;
 }
 
-.about-wrap .more-btn:after {
+.about-wrap .more-btn::after {
   width: 100%;
 }
 
