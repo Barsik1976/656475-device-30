@@ -8,7 +8,7 @@
 /* Fonts */
 
 @font-face {
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans";
   src: url("../fonts/opensans.woff2") format("woff2"),
   url("../fonts/opensans.woff") format("woff");
   font-weight: 300;
@@ -16,7 +16,7 @@
 }
 
 @font-face {
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans";
   src: url("../fonts/opensanslight.woff2") format("woff2"),
   url("../fonts/opensanslight.woff") format("woff");
   font-weight: 100;
@@ -24,7 +24,7 @@
 }
 
 @font-face {
-  font-family: "Gilroy", "Arial", sans-serif;
+  font-family: "Gilroy";
   src: url("../fonts/gilroylight.woff2") format("woff2"),
   url("../fonts/gilroylight.woff") format("woff");
   font-weight: 400;
@@ -32,7 +32,7 @@
 }
 
 @font-face {
-  font-family: "Gilroy", "Arial", sans-serif;
+  font-family: "Gilroy";
   src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
   url("../fonts/gilroyextrabold.woff") format("woff");
   font-weight: 800;
@@ -962,7 +962,6 @@ button.service-btn-current::after {
 }
 
 .service-item:hover .more-btn {
-  background-color: var(--basic-button-more);
   color: var(--basic-black);
   outline: none;
   background: transparent;
@@ -971,7 +970,6 @@ button.service-btn-current::after {
 
 .service-item:active .more-btn {
   color: var(--basic-back);
-  background: transparent;
   border: none;
   border-radius: 0;
   outline: none;
@@ -1600,16 +1598,6 @@ a.catalog-assort-active:hover {
   height: 380px;
 }
 
-.product-image:hover .product-img-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 360px;
-  height: 380px;
-  background-color: rgba(238, 238, 238, 0.7);
-  z-index: 3;
-}
-
 .product-label-new::after {
   position: absolute;
   content: "";
@@ -1626,6 +1614,8 @@ a.catalog-assort-active:hover {
 .info-hover {
   display: none;
   position: absolute;
+  width: 360px;
+  height: 380px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1636,15 +1626,14 @@ a.catalog-assort-active:hover {
 }
 
 .info-hover .more-btn {
+  margin: 0 auto;
+  margin-top: 170px;
   margin-bottom: 22px;
 }
 
 .product-image:hover .info-hover {
   display: block;
-}
-
-.product-image:focus-within .info-hover {
-  display: block;
+  background-color: rgba(238, 238, 238, 0.7);
 }
 
 .pagination {
@@ -1810,8 +1799,8 @@ a.pagination-number-active {
 .filter-color input[type="checkbox"]:checked + label::after {
   position: absolute;
   content: "";
-  width: 13.5px;
-  height: 10.5px;
+  width: 13px;
+  height: 10px;
   top: 2px;
   left: 5px;
   background-image: url("../img/check-mark.svg");
