@@ -1643,6 +1643,10 @@ a.catalog-assort-active:hover {
   display: block;
 }
 
+.product-image:focus-within .info-hover {
+  display: block;
+}
+
 .pagination {
   min-height: 70px;
   display: -webkit-box;
