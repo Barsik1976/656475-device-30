@@ -9,7 +9,7 @@
   <link rel="apple-touch-icon" href="favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page-body">
   <header class="main-header container">
@@ -18,6 +18,7 @@
     </a>
     <div class="user-wrap">
       <form class="form-search" action="http://echo.htmlacademy.ru" method="get">
+        <label class="visually-hidden" for="search-form-input">Поле поиска</label>
         <input type="search" placeholder="Поиск по сайту" id="search-form-input" required>
         <button type="submit" class="button search-button">Найти</button>
       </form>
