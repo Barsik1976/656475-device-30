@@ -992,7 +992,7 @@ button.service-btn-current::after {
   background-color: transparent;
 }
 
-.service-btn-current:focus-within {
+.service-btn-current:focus {
   outline: none;
 }
 
