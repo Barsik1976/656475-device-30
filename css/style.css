@@ -1638,6 +1638,7 @@ a.catalog-assort-active:hover {
 
 .products-item:focus-within .info-hover {
   display: block;
+  background-color: rgba(238, 238, 238, 0.7);
 }
 
 .pagination {
