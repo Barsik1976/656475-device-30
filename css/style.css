@@ -1539,6 +1539,16 @@ a.catalog-assort-active:hover {
   margin-bottom: 40px;
 }
 
+.products-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .product-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1559,19 +1569,27 @@ a.catalog-assort-active:hover {
   font-weight: 300;
   letter-spacing: 0.05em;
   margin-top: 30px;
+  order: 1;
 }
 
-.product-info a {
+.product-info h3 {
   width: 270px;
   font-family: var(--title-family);
   font-size: var(--nav-title-size);
   line-height: var(--nav-title-line);
   font-weight: var(--title-weight);
+  text-transform: none;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.product-info a {
   color: var(--basic-black);
   text-decoration: none;
 }
 
 .product-info p {
+  letter-spacing: 0.05em;
   margin: 0;
 }
 
