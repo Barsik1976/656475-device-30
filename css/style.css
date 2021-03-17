@@ -1602,7 +1602,8 @@ a.catalog-assort-active:hover {
   opacity: 0.5;
 }
 
-.info-hover-compare:hover {
+.info-hover-compare:hover,
+.info-hover-compare:focus {
   opacity: 1.0;
 }
 
